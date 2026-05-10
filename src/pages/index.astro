@@ -1,17 +1,35 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+import SceneBackground from '../components/home/SceneBackground.astro';
+import Navbar from '../components/home/Navbar.astro';
+import MobileMenu from '../components/home/MobileMenu.astro';
+import HeroSection from '../components/home/HeroSection.astro';
+import ServicesSection from '../components/home/ServicesSection.astro';
+import PricingSection from '../components/home/PricingSection.astro';
+import PortfolioSection from '../components/home/PortfolioSection.astro';
+import TestimonialsSection from '../components/home/TestimonialsSection.astro';
+import TeamSection from '../components/home/TeamSection.astro';
+import FaqSection from '../components/home/FaqSection.astro';
+import ContactSection from '../components/home/ContactSection.astro';
+import FooterSection from '../components/home/FooterSection.astro';
+import HomeScripts from '../components/home/HomeScripts.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout
+  title="SoftStudio Liquid Glass | Astro + Anime.js"
+  description="SoftStudio en Astro con estilo liquid glass, microinteracciones Lovable-style, swipes, hovers y animaciones avanzadas con Anime.js."
+>
+  <SceneBackground />
+  <Navbar />
+  <MobileMenu />
+  <HeroSection />
+  <ServicesSection />
+  <PricingSection />
+  <PortfolioSection />
+  <TestimonialsSection />
+  <TeamSection />
+  <FaqSection />
+  <ContactSection />
+  <FooterSection />
+  <HomeScripts />
+</MainLayout>

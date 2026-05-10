@@ -1,0 +1,72 @@
+<section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="section-label" data-es="Contacto" data-en="Contact">Contacto</span>
+          <h2 class="section-title" data-es="Hablemos de tu proyecto" data-en="Let's talk about your project">Hablemos de tu proyecto</h2>
+          <p class="section-subtitle" data-es="¿Tienes una idea? Cuéntanos sobre ella y te responderemos en menos de 24 horas con una propuesta personalizada." data-en="Have an idea? Tell us about it and we'll respond within 24 hours with a personalized proposal.">¿Tienes una idea? Cuéntanos sobre ella y te responderemos en menos de 24 horas con una propuesta personalizada.</p>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>hola@softstudio.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4 data-es="Teléfono" data-en="Phone">Teléfono</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4 data-es="Ubicación" data-en="Location">Ubicación</h4>
+                <p data-es="Remoto · Oficinas en CDMX y Miami" data-en="Remote · Offices in Mexico City and Miami">Remoto · Oficinas en CDMX y Miami</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4 data-es="Horario" data-en="Business Hours">Horario</h4>
+                <p data-es="Lun - Vie: 9:00 - 18:00 CST" data-en="Mon - Fri: 9:00 AM - 6:00 PM CST">Lun - Vie: 9:00 - 18:00 CST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-es="Nombre" data-en="Name">Nombre</label>
+              <input type="text" id="contactName" data-placeholder-es="Tu nombre" data-placeholder-en="Your name" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="contactEmail" data-placeholder-es="tu@email.com" data-placeholder-en="you@email.com" placeholder="tu@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-es="Servicio que necesitas" data-en="Service you need">Servicio que necesitas</label>
+            <select id="contactService">
+              <option value="" data-es="Seleccionar servicio..." data-en="Select service...">Seleccionar servicio...</option>
+              <option value="web" data-es="Página Web" data-en="Website">Página Web</option>
+              <option value="ecommerce" data-es="E-Commerce" data-en="E-Commerce">E-Commerce</option>
+              <option value="app" data-es="Aplicación Móvil" data-en="Mobile App">Aplicación Móvil</option>
+              <option value="software" data-es="Software a Medida" data-en="Custom Software">Software a Medida</option>
+              <option value="otro" data-es="Otro" data-en="Other">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-es="Cuéntanos sobre tu proyecto" data-en="Tell us about your project">Cuéntanos sobre tu proyecto</label>
+            <textarea id="contactMessage" data-placeholder-es="Describe brevemente tu idea o necesidad..." data-placeholder-en="Briefly describe your idea or need..." placeholder="Describe brevemente tu idea o necesidad..."></textarea>
+          </div>
+          <button class="btn btn-primary" onclick="submitForm()" data-es="Enviar mensaje" data-en="Send message">
+            Enviar mensaje <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
