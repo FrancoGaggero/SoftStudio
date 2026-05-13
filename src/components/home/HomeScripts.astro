@@ -79,13 +79,14 @@ import { animate } from 'animejs';
 
       document.querySelectorAll('[data-counter]').forEach(counter => {
         const target = +counter.getAttribute('data-counter');
+        const suffix = counter.getAttribute('data-suffix') || '';
         const duration = 2000;
         const start = performance.now();
         function update(now) {
           const elapsed = now - start;
           const progress = Math.min(elapsed / duration, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
-          counter.textContent = Math.round(target * eased) + (target > 10 ? '+' : '+');
+          counter.textContent = Math.round(target * eased) + suffix;
           if (progress < 1) requestAnimationFrame(update);
         }
         requestAnimationFrame(update);
